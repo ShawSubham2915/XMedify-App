@@ -1,0 +1,9 @@
+.mySwiper {
+  padding-bottom: 30px;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 15px;
+}
