@@ -29,7 +29,7 @@ const Home = () => {
           <Stack
             width="75rem"
             p={{ xs: 2.5, md: 8 }}
-            mt={{ xs: -2, md: 0, lg: -8, xl: -10 }}
+            mt={{ xs: -2, md: -6, lg: -8, xl: -10 }}
             mx="auto"
             position="relative"
             zIndex={99}

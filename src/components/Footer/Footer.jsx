@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Box,
   Grid,
@@ -27,7 +26,7 @@ const Footer = () => {
       return (
       <Box sx={{ backgroundColor: "#072A4F", color: "white", px: { xs: 3, md: 12 }, py: 6 }}>
 
-      {/* TOP ROW: Logo left + Columns right */}
+      
       <Box
         sx={{
           display: "flex",
@@ -38,7 +37,7 @@ const Footer = () => {
 
         }}
       >
-        {/* LOGO LEFT */}
+        
         <Box>
           <Box sx={{ display: "flex", alignItems: "center", mb: 10 }}>
             <Avatar sx={{ bgcolor: "#2A90E8", width: 48, height: 48, mr: 2 }}>
@@ -56,7 +55,7 @@ const Footer = () => {
           </Box>
         </Box>
 
-        {/* COLUMNS RIGHT */}
+        
         <Box sx={{ display: "flex", gap: 20 }}>
           <FooterColumn items={menuItems} />
           <FooterColumn items={services} />

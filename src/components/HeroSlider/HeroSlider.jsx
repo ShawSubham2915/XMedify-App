@@ -17,7 +17,7 @@ const HeroSlider = () => {
               Connect instantly with a 24x7 specialist or choose to video visit a particular doctor.
             </Typography>
             <Link to='/search'>
-              <Button variant="contained" size="large" disableElevation color="primary">Find Centers</Button>
+              <Button variant="contained" size="large" disableElevation sx={{bgcolor: "#2AA7FF", borderRadius: 2}}>Find Centers</Button>
             </Link>
           </Box>
           <Box 

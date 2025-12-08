@@ -9,7 +9,7 @@ const DownloadApp = () => {
   return (
     <Box
       sx={{
-        background: "linear-gradient(90deg, #E8F3FF 0%, #F7FBFF 100%)",
+        background: "linear-gradient(90deg,  #E7F0FF 0%, #E8F1FF 100%)",
         px: { xs: 3, md: 12 },
         display: "flex",
         justifyContent: "flex-start",

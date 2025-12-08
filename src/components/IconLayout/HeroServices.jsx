@@ -5,6 +5,10 @@ import {
   Typography,
   Button,
   Container,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
 } from "@mui/material";
 import doctorIcon from "../../assets/images/Doctor.png";
 import ambulanceIcon from "../../assets/images/Ambulance.png";
@@ -30,45 +34,52 @@ const HeroServices = () => {
 
   return (
     <Box>
-      <Container maxWidth="xl">
-        <Grid container spacing={2} justifyContent="center" mb={4}>
+      <Container maxWidth="lg">
+        {/* <Grid container spacing={2} justifyContent="center" mb={4}>
           <Box
             display="flex"
             justifyContent="center"
             alignItems="center"
-            sx={{ mt: -12, mb: 1 }}
-            gap={25}
+            sx={{ mt: -12, mb: 1, flexWrap: "nowrap", gap: 15, width: "100%" }}
+            
           >
-            <TextField
-              placeholder="State"
-              variant="outlined"
-              sx={{ width: "260px", borderRadius: "30%", bgcolor: "#FAFBFE" }}
-              InputProps={{
-                startAdornment: (
+            <FormControl sx={{ width: "100%", borderRadius: "30%", bgcolor: "#FAFBFE" }}>
+              <InputLabel id="select-state">State</InputLabel>
+              <Select
+                startAdornment={
                   <InputAdornment position="start">
                     <SearchIcon sx={{ color: "#8A8A8A" }} />
                   </InputAdornment>
-                ),
-              }}
-            />
+                }
+                labelId="select-state"
+                id="simple-select"
+                label="State"
+              >
+                <MenuItem value="">Select State</MenuItem>
+              </Select>
+            </FormControl>
 
-            <TextField
-              placeholder="City"
-              variant="outlined"
-              sx={{ width: "260px", bgcolor: "#FAFBFE" }}
-              InputProps={{
-                startAdornment: (
+            <FormControl sx={{ width: "100%", borderRadius: "30%", bgcolor: "#FAFBFE" }}>
+              <InputLabel id="select-city">City</InputLabel>
+              <Select
+                startAdornment={
                   <InputAdornment position="start">
                     <SearchIcon sx={{ color: "#8A8A8A" }} />
                   </InputAdornment>
-                ),
-              }}
-            />
+                }
+                labelId="select-label"
+                id="select-city"
+                label="City"
+              >
+                <MenuItem value="">Select City</MenuItem>
+              </Select>
+            </FormControl>
 
             <Button
               variant="contained"
               startIcon={<SearchIcon />} 
               sx={{
+                width: "20%",
                 px: 3,
                 py: 2,
                 fontSize: "15px",
@@ -79,7 +90,7 @@ const HeroServices = () => {
               Search
             </Button>
           </Box>
-        </Grid>
+        </Grid> */}
 
         <Typography
           component="h4"
