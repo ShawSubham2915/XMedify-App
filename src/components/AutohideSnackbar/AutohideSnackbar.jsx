@@ -5,7 +5,7 @@ const AutohideSnackbar = ({ open, setOpen, message }) => {
   return (
     <Snackbar
       open={open}
-    //   autoHideDuration={3000}
+      autoHideDuration={3000}
       onClose={() => setOpen(false)}
       anchorOrigin={{ vertical: "top", horizontal: "center" }}
     >

@@ -155,7 +155,6 @@ const Search = () => {
           open={isModalOpen}
           setOpen={setIsModalOpen}
           bookingDetails={bookingDetails}
-          // showBookingStatus={showBookingStatus}
           showSuccessDetails={setShowBookingStatus}
         />
         
