@@ -38,7 +38,7 @@ const SearchHospital = () => {
         }
       };
 
-      if(formData.state != "") {
+      if(formData.state !== "") {
         fetchCities();
       }
     }, [formData.state]);
@@ -57,7 +57,7 @@ const SearchHospital = () => {
 
         const selectStyles = {
         width: "100%", 
-        maxWidth: { xs: '100%', sm: 280, md: 320, lg: 350 },
+        maxWidth: { xs: '100%', sm: '100%', md: 320, lg: 350 },
         border: '1px solid #D1D5DB',
         borderRadius: "10px", 
         bgcolor: "#FAFBFE", 
@@ -72,9 +72,11 @@ const SearchHospital = () => {
       onSubmit={handleSubmit}
       sx={{
         display: "flex",
-        gap: 2,
+        flexDirection: { xs: "column", md: "row" },
+        alignItems: { xs: "stretch", md: "center" },
+        gap: { xs: 2, sm: 2.5, md: 2 },
         justifyContent: "space-between",
-        flexDirection: { xs: "column", md: "row"},
+        width: "100%",
         flexWrap: "wrap",
       }}
     >

@@ -1,13 +1,8 @@
 import {
   Box,
   Grid,
-  TextField,
   Typography,
-  Button,
   Container,
-  FormControl,
-  InputLabel,
-  Select,
   MenuItem,
 } from "@mui/material";
 import doctorIcon from "../../assets/images/Doctor.png";
@@ -15,7 +10,6 @@ import ambulanceIcon from "../../assets/images/Ambulance.png";
 import labIcon from "../../assets/images/Drugstore.png";
 import hospitalIcon from "../../assets/images/Hospital.png";
 import capsuleIcon from "../../assets/images/Capsule.png";
-import SearchIcon from "@mui/icons-material/Search";
 import IconCard from "../IconLayout/IconCard";
 import { useMemo } from "react";
 import InputAdornment from "@mui/material/InputAdornment";
@@ -35,62 +29,6 @@ const HeroServices = () => {
   return (
     <Box>
       <Container maxWidth="lg">
-        {/* <Grid container spacing={2} justifyContent="center" mb={4}>
-          <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            sx={{ mt: -12, mb: 1, flexWrap: "nowrap", gap: 15, width: "100%" }}
-            
-          >
-            <FormControl sx={{ width: "100%", borderRadius: "30%", bgcolor: "#FAFBFE" }}>
-              <InputLabel id="select-state">State</InputLabel>
-              <Select
-                startAdornment={
-                  <InputAdornment position="start">
-                    <SearchIcon sx={{ color: "#8A8A8A" }} />
-                  </InputAdornment>
-                }
-                labelId="select-state"
-                id="simple-select"
-                label="State"
-              >
-                <MenuItem value="">Select State</MenuItem>
-              </Select>
-            </FormControl>
-
-            <FormControl sx={{ width: "100%", borderRadius: "30%", bgcolor: "#FAFBFE" }}>
-              <InputLabel id="select-city">City</InputLabel>
-              <Select
-                startAdornment={
-                  <InputAdornment position="start">
-                    <SearchIcon sx={{ color: "#8A8A8A" }} />
-                  </InputAdornment>
-                }
-                labelId="select-label"
-                id="select-city"
-                label="City"
-              >
-                <MenuItem value="">Select City</MenuItem>
-              </Select>
-            </FormControl>
-
-            <Button
-              variant="contained"
-              startIcon={<SearchIcon />} 
-              sx={{
-                width: "20%",
-                px: 3,
-                py: 2,
-                fontSize: "15px",
-                borderRadius: "12px",
-                bgcolor: "#2AA7FF",
-              }}
-            >
-              Search
-            </Button>
-          </Box>
-        </Grid> */}
 
         <Typography
           component="h4"
@@ -98,14 +36,15 @@ const HeroServices = () => {
           color="#102851"
           fontWeight={600}
           textAlign="center"
-          mb={4}
+          mb={{ xs: 2, md: 4 }}
         >
           You may be looking for
         </Typography>
 
-        <Grid container justifyContent="center" columnSpacing={2}>
+        <Grid container justifyContent="center" columnSpacing={{ xs: 1, sm: 2, md: 2 }}
+          rowSpacing={{ xs: 2, sm: 3 }}>
           {Services.map((service, index) => (
-            <Grid item key={index} xs={6} md={2.4}>
+            <Grid item key={index} xs={6} sm={4} md={2.4}>
               <IconCard
                 img={service.img}
                 title={service.title}

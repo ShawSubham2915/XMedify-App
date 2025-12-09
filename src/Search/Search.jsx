@@ -147,7 +147,22 @@ const Search = () => {
 
               </Stack>
 
-              <img src={cta} width={360} height="auto" alt="banner" />
+             <Box
+                sx={{
+                  display: { xs: "none", md: "block" },
+                  maxWidth: "360px",
+                  width: "100%",
+                  height: "auto",
+                }}
+              >
+                <img
+                  src={cta}
+                  alt="cta"
+                  width="360"
+                  height="auto"
+                  style={{ display: "block", width: "100%", height: "auto" }}
+                />
+            </Box>
             </Stack>
         </Container>
       

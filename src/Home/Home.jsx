@@ -23,19 +23,19 @@ const Home = () => {
         mb={4}
       >
         <Navbar />
-        <Container maxWidth="xl" sx={{ px: { xs: 2, md: 6, lg: 20 } }}>
+        <Container maxWidth="xl" sx={{ px: { xs: 2, sm: 3, md: 6, lg: 12, xl: 20 } }}>
           <HeroSlider />
 
-          <Stack
-            width="75rem"
-            p={{ xs: 2.5, md: 8 }}
-            mt={{ xs: -2, md: -6, lg: -8, xl: -10 }}
+         <Stack
+            width={{ xs: "100%", sm: "90%", md: "80%", lg: "75rem" }}
+            p={{ xs: 2.5, sm: 4, md: 6, lg: 8 }}
+            mt={{ xs: -3, sm: -4, md: -6, lg: -8, xl: -10 }}
             mx="auto"
             position="relative"
             zIndex={99}
             bgcolor="#fff"
             borderRadius="15px"
-            spacing={10}
+            spacing={{ xs: 4, sm: 6, md: 8, lg: 10 }}
             boxShadow="0px 0px 12px rgba(0, 0, 0, 0.1)"
           >
             <SearchHospital />
